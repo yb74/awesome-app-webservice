@@ -28,9 +28,9 @@ public class UserController {
 	}
 	
 	// Exception handler for GeneralException
-		@ExceptionHandler(GeneralException.class)
-		public ResponseEntity<String> handleGeneralException(GeneralException ex) {
-			return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
-		}
+	@ExceptionHandler(GeneralException.class)
+	public ResponseEntity<String> handleGeneralException(GeneralException ex) {
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+	}
 
 }

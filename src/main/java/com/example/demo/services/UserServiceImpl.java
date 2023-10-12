@@ -29,13 +29,9 @@ public class UserServiceImpl implements UserService {
 	            throw new IllegalArgumentException("Invalid username or password");
 	        }
 	    } catch (IllegalArgumentException e) {
-	        // Handle invalid credentials exception here
-	        // You can log it or perform any necessary actions
-	        throw e; // Rethrow the exception if needed
+	        throw e;
 	    } catch (GeneralException e) {
-	        // Handle general exception here
-	        // You can log it or perform any necessary actions
-	        throw e; // Rethrow the exception if needed
+	        throw e;
 	    }
 	}
 
